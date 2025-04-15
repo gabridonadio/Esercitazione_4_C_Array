@@ -38,10 +38,13 @@ void stampa_su_file(ofstream& of, string name_v, double*&v,
 					unsigned int n) {
 	
 	of << defaultfloat << name_v << " = [ ";
+	cout << defaultfloat << name_v << " = [ ";
 	for(unsigned int i=0; i<n; i++) {
 		of << v[i] << " ";
+		cout << v[i] << " ";
 	}
 	of << "]" << endl;
+	cout << "]" << endl;
 }
 
 double get_final_value(double*&v1, double*&v2, const double& S, unsigned int n) {

@@ -24,6 +24,8 @@ int main()
 	
 	of << fixed << setprecision(2) << "S = " << S << ", " <<
 	"n = " << n << endl;
+	cout << fixed << setprecision(2) << "S = " << S << ", " <<
+	"n = " << n << endl;
 	
 	
 	string _; 
@@ -43,6 +45,10 @@ int main()
 	of << defaultfloat << setprecision(4) <<
 	"Rate of return of the portfolio: " << rate << endl;
 	of << fixed << setprecision(2) << "V: " << V << endl; 
+	
+	cout << defaultfloat << setprecision(4) <<
+	"Rate of return of the portfolio: " << rate << endl;
+	cout << fixed << setprecision(2) << "V: " << V << endl; 
 	
 	delete [] w;
 	delete [] r;
